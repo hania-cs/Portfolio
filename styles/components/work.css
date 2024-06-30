@@ -29,18 +29,18 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem; /* Add gap between project items */
   margin-bottom: 2rem; /* Adjust spacing between rows */
 }
 
 /* Project item styles */
 .project {
-  flex: 0 0 48%; /* Two projects per row with some spacing */
+  flex: 0 0 calc(50% - 1rem); /* Two projects per row with some spacing */
   box-sizing: border-box;
-  background: var(--clr-white); /* Adjust background color */
+  background: transparent; /* Set background to transparent */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem; /* Adjust spacing between projects */
 }
 
 /* Project subtitles */
