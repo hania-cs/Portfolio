@@ -1,0 +1,113 @@
+/* General container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section styles */
+.section {
+  padding: 60px 0;
+}
+
+/* Project section title and description */
+.work__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.work__description {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--clr-white); /* Adjust color as needed */
+}
+
+/* Projects row layout */
+.projects-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; /* Add gap between project items */
+  margin-bottom: 2rem; /* Adjust spacing between rows */
+}
+
+/* Project item styles */
+.project {
+
+    flex: 0 0 calc(50% - 1rem); /* Two projects per row with some spacing */
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1); /* Change to the color you want, here using a semi-transparent black */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Project subtitles */
+.work__project-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr-slate800); /* Adjust color as needed */
+}
+
+/* Project descriptions */
+.work__project-description1 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--clr-slate700); /* Adjust color as needed */
+}
+
+.work__project-description2 {
+  font-size: 1rem;
+  color: var(--clr-slate600); /* Adjust color as needed */
+  margin: 1rem 0;
+}
+
+/* Image wrapper styles */
+.work__img-wrapper {
+  margin-bottom: 1rem;
+}
+
+/* Ensure images are responsive */
+.work__img-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border radius if needed */
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--clr-white); /* Button text color */
+  background: var(--clr-primary); /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 0.5rem; /* Adjust spacing between buttons */
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--clr-primary-dark); /* Adjust hover color */
+}
+
+/* Variables (adjust colors as needed) */
+:root {
+  --clr-white: #ffffff;
+  --clr-slate600: #718096;
+  --clr-slate700: #4a5568;
+  --clr-slate800: #2d3748;
+  --clr-primary: #2b6cb0;
+  --clr-primary-dark: #2c5282;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .project {
+    flex: 0 0 100%;
+  }
+}
